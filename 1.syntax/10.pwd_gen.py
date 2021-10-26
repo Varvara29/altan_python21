@@ -8,8 +8,7 @@ def generator():
     # 1. чтение данных строки сырой пароли
     pwd_str = pwd.get()
     # кодирование в байт-строка
-    byte_str = pwd_str.encode()
-    # хеширование
+    byte_str = pwd_str.encod0
     hash_str = hashlib.sha256(byte_str)
     # преобразование хеш-строки в обычную строку
     hex_str = hash_str.hexdigest()[:10]
